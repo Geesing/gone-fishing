@@ -445,6 +445,8 @@ function randomOffset() {
 }
 
 // Increment rotation of object towards direction of motion
+// Usage of quaternions inspired by:
+// https://threejs.org/examples/webgl_math_orientation_transform
 function alignRotation(obj, vel) {
   if(vel.x != 0 || vel.z != 0) {
     const targetAngle = -Math.atan2(vel.z, vel.x);
