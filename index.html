@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Gone Fishing</title>
+		<style>
+			body { margin: 0; }
+      #end-screen { 
+        position: absolute;
+        color: #fff;
+        align-content: "center";
+        width: 100%;
+        height: 100%;
+      }
+      #score {
+        position: absolute;
+        color: #fff;
+        top: 10px;
+        right: 10px;
+      }
+		</style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+	</head>
+	<body>
+    <div id="score"></div>
+    <center id="end-screen" style="display: none;">
+      <h1>Game Over</h1>
+      <button id="restart">Restart</button>
+    </center>
+    <script type="module" src="./goneFishing.js"></script>
+	</body>
+</html>
