@@ -159,6 +159,10 @@ function init() {
   floor.position.set(0, 0, 0);
   scene.add(floor);
 
+  // Ambient lighting
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.02);
+  scene.add(ambientLight);
+
   // Players assigned anglerfish model, given point light "bulbs"
   bluePlayer = SkeletonUtils.clone(anglerGroup);
   const blueBulb = new THREE.PointLight(0x0000ff, 100);
