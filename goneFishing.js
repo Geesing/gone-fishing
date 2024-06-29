@@ -25,7 +25,6 @@ var redPlayer = new THREE.Group();
 const redPlayerClock = new THREE.Clock();
 // Animation components to load in init() and use in animate()
 var redMixer;
-var redIdleAction;
 var redSwimAction;
 
 var bluePlayer = new THREE.Group();
@@ -33,7 +32,6 @@ var bluePlayer = new THREE.Group();
 const bluePlayerClock = new THREE.Clock();
 // Animation components to load in init() and use in animate()
 var blueMixer;
-var blueIdleAction;
 var blueSwimAction;
 
 // Loader for player models
@@ -180,14 +178,10 @@ function init() {
 
   // Players assigned animations from anglerfish model
   blueMixer = new THREE.AnimationMixer(bluePlayer);
-  blueIdleAction = blueMixer.clipAction(anglerAnimations[3]);
-  blueIdleAction.play();
   blueSwimAction = blueMixer.clipAction(anglerAnimations[5]);
   blueSwimAction.play();
 
   redMixer = new THREE.AnimationMixer(redPlayer);
-  redIdleAction = redMixer.clipAction(anglerAnimations[3]);
-  redIdleAction.play();
   redSwimAction = redMixer.clipAction(anglerAnimations[5]);
   redSwimAction.play();
 
