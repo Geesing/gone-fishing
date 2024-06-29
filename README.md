@@ -1,5 +1,5 @@
 # Gone Fishing
-A project for CS 372: Computer Graphics at [Calvin University](https://calvin.edu).
+A project for CS 372: Computer Graphics at [Calvin University](https://calvin.edu).\
 This project uses THREE.js. Follow installation instructions [here](https://threejs.org/docs/index.html#manual/en/introduction/Installation).
 
 # Premise
