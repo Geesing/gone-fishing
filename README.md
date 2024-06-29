@@ -1,11 +1,14 @@
---Premise--
+# Gone Fishing requires THREE.js.
+Follow installation instructions [here](https://threejs.org/docs/index.html#manual/en/introduction/Installation).
+
+# Premise
 * The idea of the game is simple: fish of the same color eat each other.
   * (Unlike birds of a feather...)
 * You play as two anglerfish, each a different color.
 * You gain points by eating fish of the same color.
 * You die by eating fish of a different color.
 
---How to Play--
+# How to Play
 * The red anglerfish is controlled by WASD.
 * The blue anglerfish is controlled by the arrow keys.
 
